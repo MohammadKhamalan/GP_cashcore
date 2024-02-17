@@ -1,0 +1,43 @@
+.sidebar {
+    // background-color: #245f70;
+    background: linear-gradient(-35deg, #245f70, #727f89);
+
+    color: white;
+    width: 250px;
+    height: 75svi; /* Adjust based on your layout */
+  margin-top: -18px;
+  
+    .sidebar__list {
+      list-style: none;
+      padding: 0;
+      .logo{
+        width: 120px;
+        height: 150px;
+        margin-left: 50px;
+        margin-top: 115px;
+    }
+      .sidebar__item {
+
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+  margin-bottom: 14px;
+  a {
+    color: white; /* Change the color to white */
+    text-decoration: none; /* Remove default underline */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between icon and text */
+  }
+        &:hover {
+          background-color: #444;
+        }
+  
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  

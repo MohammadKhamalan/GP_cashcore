@@ -1,0 +1,71 @@
+/* Visits.scss */
+.visits-container {
+    max-width: 800px;
+    margin-left: 30%;
+    margin-top: -75%;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+  
+    .date-filter {
+      width: 118%;
+      margin-bottom: 20px;
+      margin-left: -9%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #e9e9e9;
+    }
+  
+    .visits-table {
+      width: 120%;
+      border-collapse: collapse;
+  margin-left: -9%;
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+  
+      th {
+        background: linear-gradient(-35deg, #245f70, #184b6f);
+        color: white; /* Add this line to ensure text is visible */
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+  
+      tr:hover {
+        background-color: #e9e9e9;
+      }
+    }
+  }
+  
+  /* Button styles */
+  .button {
+    width: 90px;
+    display: inline-block;
+    padding: 10px 2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+   
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+  

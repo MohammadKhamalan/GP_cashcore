@@ -1,0 +1,145 @@
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  margin-top: -76.6%;
+  margin-left: 17.22%;
+  background: linear-gradient(-35deg, #245f70, #727f89);
+  h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc; /* Add a bottom border */
+      padding-bottom: 10px;
+      /* Additional styling for the title if needed */
+    }
+  
+    .products-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 80px;
+  
+      .product-box {
+        width: calc(43.333% - 20px); /* Adjust the width as needed */
+        background-color: #b2b4b2; /* Background color for product box */
+        padding: 20px;
+        border-radius: 8px;
+
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Additional styling for each product box */
+  
+        &:nth-child(3n + 1) {
+          margin-right: 0; /* Clear right margin for every third product */
+        }
+  strong{
+    font-weight: bold;
+  }
+  .category{
+    margin-top: -18px;
+}
+  .product-details {
+    display: flex;
+    flex-direction: column; /* Stack product details vertically */
+    gap: 10px; /* Add vertical gap between details */
+  
+    .name-price {
+      display: flex;
+      justify-content: space-between; /* Align name and price horizontally */
+      align-items: center; /* Align items vertically */
+      margin-bottom: -2px;
+      margin-top: -12px;
+      p{
+        font-weight: bold;
+      }
+    }}
+       
+       
+        img{
+            width: 400px;
+            height: 250px;
+            margin-left: 25px;
+        }
+        button {
+            width: 80px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+  
+            &.delete-button {
+              background-color:#9a9c9a;
+              /* other styles for the delete button */
+            }}
+      }
+    }
+  }
+  /* Form styles */
+  .product-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px; /* Gap between grid items */
+  
+    input[type='text'],
+    input[type='file'],
+    button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 80%; /* Expand input fields to fill grid cells */
+    }
+  
+    input[type='file'] {
+      cursor: pointer;
+      margin-top: 15px;
+      margin-left: 60%;
+    }
+  
+    .button-group {
+      display: flex;
+      justify-content: space-between; /* Distribute space between buttons */
+      align-items: center; /* Align buttons vertically */
+      margin-top: 15px; /* Adjust margin as needed */
+      margin-left: 0; /* Reset margin */
+  
+      button {
+        width: 120px; /* Adjust button width */
+        height: 40px; /* Adjust button height */
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .back {
+        background-color: #7e9da5;
+        color: white;
+        margin-left: 0; /* Reset margin */
+        &:hover {
+          background-color: #727f89;
+        }
+      }
+  
+      .add {
+        background-color: #7e9da5;
+        color: white;
+        margin-right: -590px; /* Reset margin */
+        &:hover {
+          background-color: #727f89;
+        }
+      }
+    }
+    
+  }
+  
+.show{
+  background-color: #7e9da5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 160px;
+  height: 40px;
+
+  &:hover {
+    background-color: #727f89;
+  }
+  
+}

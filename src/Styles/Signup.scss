@@ -1,0 +1,132 @@
+/* Signup.scss */
+
+.signup-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  left: 0;
+  width: 450px;
+  margin-left: -85px;
+margin-top: 0px;
+  z-index: 1;
+  transform: translateX(-100%);
+  background: -webkit-linear-gradient(-30 deg , #00232e, #A49882);
+
+  &.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-left: 300px;
+    color: #bff5ff;
+    margin-top: 40px;
+
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+    margin-left: 65%;
+    margin-top: 10px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    width: 115%;
+    text-align: center;
+   
+     margin-left: 75px;
+    margin-top: 10px;
+    
+    .input-container {
+      display: flex;
+      align-items: center;
+      background-color: #E1E2E7;
+padding: 4px;
+            border: none;
+      width: 400px;
+      height: 40px;
+      margin-bottom: 43px;
+     border: none;
+      input {
+        background-color: #E1E2E7;
+        border: none;
+        padding: 12px 15px;
+        width: 100%;
+       
+      }
+
+      &.error {
+        border: 2px solid red;
+      }
+
+      
+      
+    }
+
+    button {
+      border-radius: 20px;
+      border: 1px solid #001b20;
+      background-color: #001b20;
+      margin-top: 12px;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      padding: 12px 45px;
+      transition: transform 80ms ease-in;
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.err{
+  margin-top: -8%;
+  color: red;
+  margin-right: 45%;
+  margin-left: 10%;
+}
+.err1{
+  margin-top: -7%;
+  color: red;
+  margin-right: 45%;
+  margin-left: -9%;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+.err2{
+  margin-top: -7%;
+  color: red;
+  margin-right: 45%;
+  margin-left: -15%;
+  margin-bottom: 10px;
+
+}.err3{
+  margin-top: -7%;
+  color: red;
+  margin-right: 45%;
+   margin-left: -5%;
+  margin-bottom: 10px;
+
+}.err4{
+  margin-top: -7%;
+  color: red;
+  margin-right: 35%;
+  margin-left: -5%;
+  margin-bottom: 10px;
+
+}

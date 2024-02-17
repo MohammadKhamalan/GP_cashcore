@@ -1,0 +1,73 @@
+
+.navbar{
+        background: linear-gradient(-35deg, #245f70, #184b6f);
+//    background-color: -webkit-linear-gradient(30 deg , #245f70, #A49882);
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+height: 50;
+border-bottom: 1px solid lightgray;
+input{
+    border: "none";
+width: 200px;
+border-radius: 25px;
+height: 30px;
+gap: 10px;
+
+}
+//     @include mobile{
+//         width: 500px;
+// display: flex;
+
+// }
+// @include tablet{
+//     display: flex;  
+//       width: 1120px;
+    
+//       }
+}
+.left{
+    display: flex;
+    align-items: center;
+gap: 30px;
+
+
+}
+
+.logoo{
+    width: 70px;
+    margin-top: -5px;
+}
+.cashcore{    
+    margin-left: 10px;
+   color: white;
+    
+}
+.center{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+   
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap:30px;
+   
+        
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    color:white;
+   
+}
+.profile{
+width: 50px;
+height: 50px;
+ border-radius: 50%;
+ 
+}

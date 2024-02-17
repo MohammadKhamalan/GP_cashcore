@@ -1,0 +1,120 @@
+/* Login.scss */
+.login-container {
+    position: absolute;
+    height: 35%;
+    width: 70%;
+    margin-left: 120px;  
+    margin-top: 20%;
+    background: -webkit-linear-gradient(-30 deg, #00232e, #A49882);
+    &.active {
+      transform: translateX(0);
+      opacity: 1;
+      width: 50%;
+    }
+  .for{
+    margin-top: -10%;
+margin-left: 30%;
+  }
+  
+  img{
+    height: 150px;
+    width: 150px;
+margin-left:70px;
+margin-bottom: 50px;  }
+    .title {
+      font-weight: bold;
+      margin-left: 30%;  
+
+}
+.title{
+  color: #bff5ff;
+}
+
+.email{
+  display: flex;
+  align-items: center; 
+  background-color: #E1E2E7;
+  gap: 5px;
+  border-radius: 20px;
+width: 400px;
+height: 30px;
+margin-bottom: 25px;
+padding: 8px;
+input{
+  background-color: #E1E2E7;
+  border-radius: 20px;
+
+  }
+} 
+
+.pass{
+  display: flex;
+  align-items: center; 
+  background-color: #E1E2E7;
+  gap: 5px;
+  border-radius: 20px;
+width: 400px;
+height: 30px;
+margin-bottom: 15px;
+padding: 8px;
+input{
+  background-color: #E1E2E7;
+  border-radius: 20px;
+
+  }
+} 
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 50px;
+      margin-right: 40%;
+      text-align: center;
+      input {
+        background-color: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: -18px 0;
+        width: 100%;
+      }
+      
+     
+    }
+
+  }
+  .logo{
+    width:180px;
+    height: 160px;
+    margin-left: 85%;
+    margin-top: 39%;
+    position: absolute;
+  }
+  .signin {
+    border-color: #ffffff;
+        border-radius: 17px;
+        border: 1px solid #91C4D9;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        text-transform: uppercase;
+        background-color: #001b20;
+        margin-left: 22%;
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .forgot-password{
+    margin-bottom: 15px;
+    margin-left: -2500%;
+    font-size: 14px;
+}
+.forgot-password a{
+  color: #bff5ff;
+
+}

@@ -1,0 +1,120 @@
+/* Overlay.scss */
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(-100%);
+  
+    &.active {
+      transform: translateX(0);
+    }
+  
+    .overlay {
+      .overlay {
+        background: linear-gradient(135deg, #00232e, #A49882, #002642);
+        // Other styles...
+        animation: bg 1s ease infinite; /* Apply the 'bg' animation */
+
+      }
+      
+      // background: linear-gradient(-45deg, #00232e, #A49882);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      color: #ffffff;
+      position: relative;
+      left: -100%;
+      height: 100%;
+      width: 200%;
+      transition: transform 0.6s ease-in-out;
+  
+      &.active {
+        transform: translateX(50%);
+      }
+  
+      .left-panel,
+      .right-panel {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+      }
+  
+      .left-panel {
+        transform: translateX(-20%);
+        &.active {
+          transform: translateX(0);
+        }
+      }
+  
+      .right-panel {
+        right: 0;
+        transform: translateX(0);
+
+        &.active {
+          transform: translateX(20%);
+        }
+      }
+      .ghost-button {
+        margin-top: -59%;
+      }
+      
+      .title,
+      .paragraph{
+        transition: all 0.3s ease-in-out; /* Adjust the timing as needed */
+        margin-top: -10%;
+      }
+      
+      .title {
+        font-weight: bold;
+      }
+  
+      .paragraph {
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        margin: 20px 0 30px;
+      }
+  
+      .ghost-button {
+        border-color: #ffffff;
+        border-radius: 20px;
+        border: 1px solid #91C4D9;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background-color: #001b20;
+
+       
+      }
+    }
+  }
+ 

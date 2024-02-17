@@ -1,0 +1,190 @@
+// Posts.scss
+
+.posts-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+margin-top: -76.5%;
+margin-left: 17.4%;
+border-radius: 1%;
+//background-color: #f3ece7; /* Set a background color for the container */
+background: linear-gradient(-35deg, #245f70, #727f89);
+
+// Button styles
+&.add-post-button {
+  /* ... */
+  width: 120px; /* Increase width for better visibility */
+  height: 50px;
+  border-radius: 25px; /* Make the button more rounded */
+  font-size: 18px; /* Increase font size for better readability */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+  
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%; /* Utilize maximum width available */
+  margin: 0 auto; /* Center the form */
+  .input-container {
+    display: flex;
+    gap: 5px; /* Adjust the gap between textarea and file input */
+  textarea {
+    margin-left: -46px;
+    height: 80px;
+    margin-bottom: 5px;
+
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 0.95; /* Allow the textarea to grow to fill available space */
+  }
+
+  input[type='file'] {
+    margin-top: 20px;
+    padding: 1px;
+    margin-right: 55px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  
+  button[type='submit'] {
+    font-size: 16px;
+    font-weight: bold;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #7e9da5;
+    color: white;
+width: 80px;
+margin-top: 55px;
+margin-bottom: 15px;
+margin-left: -36.5%;
+    &:hover {
+      background-color: #727f89;
+    }
+  }
+  }
+  // Additional form styles can go here
+}
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .post {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    .post-details {
+      display: flex;
+      align-items: center;
+margin-left: -22px;
+      .cashcore {
+        width: 50px; /* Adjust the width of the image */
+        height: 50px; /* Adjust the height of the image */
+        border-radius: 50%; /* Make the image circular */
+        object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+        background-color: black; /* Set a black background color */
+        border: 2px solid #fff; /* Optional: Add a white border */
+        margin-right: 10px; /* Adjust spacing between image and text */
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin-top: -10px; /* Remove default margin */
+        font-weight: bold; /* Adjust font weight as needed */
+        color: black; /* Set a black background color */
+
+      }
+
+      .date {
+          margin-top: 39px;
+          margin-left: -110px;
+        font-size: 14px; /* Adjust font size for the date */
+        color: black; /* Set a black background color */
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: black;
+    }
+.content{
+  img{
+      width: 400px;
+      height: 250px;
+      margin-left: 45px;
+  }
+}
+    p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 8px;
+
+      &.date {
+        color: #888;
+      }
+
+      &.likes {
+        color: red; /* Green color for likes */
+      }
+      &.comment-icon-container{
+          color:green;
+      }
+    }
+    .option{
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+.add-post-button {
+  background-color: #7e9da5;
+  color: white;
+  width: 120px;
+  height: 50px;
+}
+  .comment-icon-container{
+    color: blue;
+    margin-top: 15px;
+  }
+  .comments-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-top: 70px;
+    margin-left: -12%;
+    background: #ffffff;
+   
+    .comment {
+      /* Style each individual comment */
+      margin-bottom: 20px; /* Add margin between comments */
+      padding-bottom: 10px; /* Add padding at the bottom */
+      border-bottom: 1px solid #ccc; /* Add a border bottom to separate comments */
+      .comment-user {
+        font-weight: bold; /* Make the user name bold */
+      }
+    }
+    
+    .comment:last-child {
+      /* Remove border bottom for the last comment */
+      border-bottom: none;
+    }
+    p {
+      margin: 5px 0;
+    }
+    
+    .no-comments {
+      font-style: italic;
+      color: #888;
+    }
+  }
+  

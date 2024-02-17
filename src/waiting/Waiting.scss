@@ -1,0 +1,126 @@
+
+.home {
+  margin-top: -75.5%; /* Adjust this value as needed */
+  margin-left: 0.1%;
+  .success-message {
+    background-color: #dff0d8; /* Background color */
+    border: 1px solid #d0e9c6; /* Border color */
+    margin-left: 1%;
+    margin-top: 15%;
+    width: 67%;
+    color: #3c763d; /* Text color */
+    padding: 10px; /* Padding around the content */
+    border-radius: 5px; /* Border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .waiting-account-list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .list {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-left: 18%;
+    display: flex;
+    gap: 10px;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .extra-details {
+      width: 300px; /* Fixed width for consistent alignment */
+
+      .input-field {
+        margin-top: 20px;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        input[type='text'] {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          transition: border-color 0.3s ease-in-out;
+
+          &:focus {
+            border-color: dodgerblue;
+            outline: none;
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: flex-end; /* Align buttons to the right */
+        margin-top: -50px;
+        gap: 10px;
+        margin-right: -280%; /* Adjust the margin as needed */
+
+        button {
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &.delete-buttn {
+            background-color: rgb(133, 69, 69);
+            /* other styles for the delete button */
+          }
+
+          &.accept-button {
+            background-color: #306b3e;
+            /* other styles for the accept button */
+          }
+
+          &:hover {
+            background-color: #245f70;
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+    }
+  }
+}
+.no-data-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1206px;
+  height: 650px;
+  background-color: #ccc;
+  margin-top: -76.6%; /* Adjust margin as needed */
+  margin-left: 17.2%; /* Adjust margin as needed */
+}
+
+.no-data-message p {
+  text-align: center;
+  font-size: 18px;
+  margin: 0; /* Remove default margin */
+}

@@ -1,0 +1,49 @@
+.ce-chat-list-column{
+    box-sizing: border-box;
+    min-height: 1px;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-left: 0%;
+    right: auto;
+    background-color: #5995fd;
+
+    left: auto;
+    height: 100%;
+    overflow-y: scroll;
+}
+.chathome{
+    display: flex;
+    width: 100%;
+    background-color: #5995fd;
+
+
+}
+.chatform{
+    flex: 9;
+    background-color: #5995fd;
+
+}
+.c-chat-list {
+    text-align: left;
+  }
+  
+
+.ce-send-message-button{
+    width: 250px;
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
